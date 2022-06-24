@@ -10,7 +10,7 @@ def handle_message(update, context):
     update.message.reply_text(resposnses)
 
 def main():
-    updater = Updater("5478152172:AAGtty4JGhmzVKAr8b534o__0l7UWBF6F7k", use_context=True)
+    updater = Updater(apikey, use_context=True)
     dp = updater.dispatcher
 
     dp.add_handler(CommandHandler("start", start_command))
